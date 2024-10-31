@@ -1,14 +1,7 @@
 <?php
 session_start();
 
-// Check if supervisor_id is set in session
-if (!isset($_SESSION['supervisor_id'])) {
-    // Redirect to login if not set
-    header("Location: login.php");
-    exit();
-}
-
-$current_supervisor_id = $_SESSION['supervisor_id'];
+$current_supervisor_id = $_SESSION['supervisor_id'] ?? null; // Get supervisor_id if set in session
 
 // Database connection
 $host = "localhost";
@@ -29,6 +22,7 @@ if (isset($_POST['search'])) {
 }
 $result = $conn->query($sql);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

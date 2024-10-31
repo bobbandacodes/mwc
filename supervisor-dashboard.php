@@ -13,8 +13,8 @@
         <a href="index.php"><h2>MWC</h2></a> 
         <ul>
             <li><a href="#"><i class="fas fa-building"></i> Branches</a></li>
-            <li><a href="#"><i class="fas fa-user-plus"></i> Add New Worker</a></li>
-            <li><a href="workers-list.php"><i class="fas fa-search"></i> Search for Worker</a></li>
+            <li><a href="addWorker.php"><i class="fas fa-user-plus"></i> Add New Worker</a></li>
+            <li><a href="workers-list.php"><i class="fas fa-search"></i>Search for Worker</a></li>
             <li><a href="#"><i class="fas fa-file-alt"></i> Request Reports</a></li>
         </ul>
     </div>
